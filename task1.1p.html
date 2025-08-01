@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kulvinder Singh - Personal Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #f7f6fae8;
+      padding: 1em;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: left;
+      gap: 2em;
+      flex-wrap: wrap;
+    }
+
+    .navbar a {
+      color: rgb(52, 14, 242);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+      color: #000080;
+    }
+
+    .header {
+      position: relative;
+      max-height: 400px;
+      overflow: hidden;
+    }
+
+    .header img {
+      width: 100%;
+      display: block;
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 20px;
+      font-size: 2em;
+      border-radius: 10px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .header:hover .overlay-text {
+      opacity: 1;
+    }
+
+    .profile {
+      text-align: center;
+      margin: 2em 0;
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+
+    .projects {
+      padding: 2em;
+      background-color: #fff;
+    }
+
+    .project-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      justify-content: center;
+    }
+
+    .project {
+      width: 300px;
+      background: #eee;
+      padding: 1em;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .project img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .photos {
+      padding: 2em;
+      background: #f9f9f9;
+    }
+
+    .photos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1em;
+    }
+
+    .photos-grid img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+      }
+
+      .project {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Image with Hover -->
+  <header class="header">
+    <img src="https://studylink.org/vnt_upload/File/Image/TRUONG_DEAKIN_UNIVERSITY.jpg" alt="Header Image" />
+    <div class="overlay-text">Hey, I'm Kulvinder</div>
+  </header>
+
+  <!-- Profile Section -->
+  <section class="profile" id="about">
+    <img src="kulvinder.jpg" alt="Kulvinder Profile Photo" />
+    <div style="color: blue;">
+      I am a full stack web developer based in Melbourne, Australia <br>
+      ______________________ <br><br>
+      Here's what I've done so far
+    </div>
+  </section>
+
+  <!-- Project Section -->
+  <section class="projects" id="work">
+    <h2>My Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <img src="project1.png" alt="Raspberry Pi DHT11 Project" />
+        <h3>Raspberry Pi connected to a DHT11 temperature</h3>
+        <p>This image shows a Raspberry Pi connected to a DHT11 temperature and humidity sensor using jumper wires. The sensor is powered and sends data to the Pi through the GPIO pins, commonly used in IoT and environmental monitoring projects.</p>
+      </div>
+      <div class="project">
+        <img src="project2.png" alt="Weather Reporting System" />
+        <h3>Weather Reporting System</h3>
+        <p>This photo depicts the temperature and humidity measuring device based on a personal PC board. It includes a microcontroller (probably an ATmega or PIC), a green LED to show power/status and an LCD screen that shows a real-time value of humidity and temperature.</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- Image Gallery -->
+  <section class="gallery">
+    <h2>My photos</h2>
+    <div class="photos-grid">
+      <img src="picture1.png" alt="Gallery Image 1" />
+      <img src="picture2.png" alt="Gallery Image 2" />
+      <img src="picture3.png" alt="Gallery Image 3" />
+    </div>
+  </section>
+
+</body>
+</html>
+
