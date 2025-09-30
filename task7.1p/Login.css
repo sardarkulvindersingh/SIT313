@@ -1,0 +1,84 @@
+/* Full page center */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fff;
+}
+
+/* Box container */
+.login-container {
+  border: 1px solid #3b82f6; /* blue border */
+  padding: 30px;
+  width: 350px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Sign up link button */
+.signup-link {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  background: #f0f8ff;
+}
+
+/* Labels */
+.login-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Inputs */
+.login-container input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-container input:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+/* Login button */
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background: #2563eb;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
